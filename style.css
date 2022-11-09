@@ -1,0 +1,42 @@
+body{
+    margin: 0 auto;
+    padding: 0%;
+}
+header{
+    height: 51px;
+    width: 1349 px;
+    background-color:rgb(35, 145, 108);
+    padding-top: 0%;
+   
+}
+header h1{
+    float: left;
+    width: auto;
+    position: relative;
+    margin-left: 1%;
+    padding-bottom: 5px;
+    margin-top: 0%;
+
+}
+
+header div{
+    float: left;
+    width: auto;
+    position: relative;
+    margin-left: 1%;
+    padding-bottom: 5px;
+    margin-top: 0%;
+    text-align: center;
+}
+
+header div ul{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+header div ul li{
+    list-style:none;
+    margin-left: 20px;
+    
+} /**/
