@@ -1,7 +1,9 @@
 body{
     margin: 0 auto;
+    box-sizing: border-box;
     padding: 0%;
 }
+ /*
 header{
     height: 51px;
     width: 1349 px;
@@ -39,4 +41,46 @@ header div ul li{
     list-style:none;
     margin-left: 20px;
     
-} /**/
+}*/
+
+nav{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 10px;
+    position:fixed;
+    background-image:linear-gradient(rgb(24, 68, 85),rgb(21, 36, 41));
+
+}
+nav .logo h1{
+
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing 1.5em;
+    cursor: pointer;
+    margin-top: 0%;
+    
+}
+nav ul{
+    float: right;
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+
+}
+nav li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    color: aliceblue;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: tomato;
+    transition: all 0.4s ease 0s ;
+}
+
