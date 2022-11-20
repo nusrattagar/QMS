@@ -46,6 +46,7 @@ header div ul li{
 nav{
     width: 100%;
     height: 75px;
+    top: 0px;
     line-height: 75px;
     padding: 0px 10px;
     position:fixed;
@@ -99,13 +100,13 @@ nav li a:hover{
    
     
   }
-
+/*
 footer{
-    position: absolute;
+    position: fixed;
     bottom: 0;
    text-align: center;
    width: 100%;
-}
+}*/
 /*style for menu collaps menubar*/
 .sidebar {
     height: 100%;
@@ -175,4 +176,32 @@ footer{
     .sidebar {padding-top: 15px;}
     .sidebar a {font-size: 18px;}
   }
-    
+
+.middle{
+  clear: both;
+  margin-top: 75px;
+  height: 500px;
+  width:100%;
+  background-image: linear-gradient(rgb(192, 189, 207),rgb(100, 100, 116));
+
+}
+.half{
+  width: 40%;
+  float: left;
+  margin-left: 5%;
+  padding-left: 2%;
+}
+.half img{
+  margin-top: 76px;
+  width: 100%;
+  height: 100%;
+  background-color: #818181;
+}
+.end{
+  clear: both;
+  margin-top:0px; 
+  height: 500px;
+  width:100%;  
+  background-image: linear-gradient(rgb(82, 82, 107),rgb(74, 64, 128));
+
+}
