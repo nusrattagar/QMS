@@ -2,6 +2,7 @@ body{
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0%;
+  
 }
  /*
 header{
@@ -147,14 +148,14 @@ footer{
     margin-right: 5px;
     font-size: 15px;
     cursor: pointer;
-    background-color: rgb(181, 182, 245);
+    background-color: rgb(100, 101, 112);
     color: white;
     padding: 10px 10px;
     border: none;
   }
   
   .openbtn:hover {
-    background-color: #444;
+    background-color: tomato;
   }
   
   .sidebar h1 {
@@ -182,7 +183,7 @@ footer{
   margin-top: 75px;
   height: 500px;
   width:100%;
-  background-image: linear-gradient(rgb(192, 189, 207),rgb(100, 100, 116));
+  background-image: linear-gradient(rgb(199, 230, 230),rgb(115, 143, 143));
 
 }
 .half{
@@ -202,6 +203,7 @@ footer{
   margin-top:0px; 
   height: 500px;
   width:100%;  
-  background-image: linear-gradient(rgb(82, 82, 107),rgb(74, 64, 128));
+  background-image: linear-gradient(rgb(115, 143, 143),rgb(199, 230, 230));
 
 }
+

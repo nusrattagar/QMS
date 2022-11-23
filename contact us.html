@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact us page</title>
+
+</head>
+<body>
+    <!--navbar starts-->
+    <nav>
+        <div class="logo">
+<h1>Queue Management System</h1>
+        </div>
+   <div class="options">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="contact us.html">Contact Us</a></li>
+        <!--<li><a href="#">Menu</a></li>-->
+        <li id="main">
+            <button class="openbtn" onclick="openNav()">☰ Menu </button>  
+        </li>
+    </ul>
+    
+      </div>
+
+ <!--collaps menu-->
+    <div id="mySidebar" class="sidebar">
+        <h1>Menu</h1>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">Department</a>
+        <a href="#">Counter</a>
+        <a href="#">User</a>
+        <a href="#">Token</a>
+      </div> 
+    </nav>
+<!--navbar ends-->
+
+<!--contact us stars-->
+
+  </div>
+  
+
+  <div class="container">
+	<div class="row">
+			<h2>contact us</h1>
+	</div>
+	<div class="row">
+			<h4 style="text-align:center">We'd love to hear from you!</h4>
+	</div>
+	<div class="row input-container">
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required />
+					<label>Name</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input">
+					<input type="text" required />
+					<label>Email</label> 
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<div class="styled-input" style="float:right;">
+					<input type="text" required />
+					<label>Phone Number</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<textarea required></textarea>
+					<label>Message</label>
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="btn-lrg submit-btn">Send Message</div>
+			</div>
+	</div>
+</div>
+<script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginLeft= "0";
+    }
+    </script>
+<section>
+
+</body>
+</html>
