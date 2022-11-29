@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Queue Management System</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav>
@@ -28,19 +29,37 @@
  <!--collaps menu-->
     <div id="mySidebar" class="sidebar">
         <h1>Menu</h1>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-        <a href="#">Department</a>
-        <a href="#">Counter</a>
-        <a href="#">User</a>
-        <a href="#">Token</a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        
+        <button class="dropdown-btn">Department  <i class="fa fa-caret-down"></i>
+        </button><!--<a href="#">Department</a>-->
+                <div class="dropdown-container">
+          <a href="AddDepartment.html">Add Department</a>
+          <a href="DepartmentList.html">Department List</a>
+        </div>
+        <button class="dropdown-btn">Counter  <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="Addcounter.html">Add Counter</a>
+          <a href="CounterList.html">Counter List</a>
+        </div>
+        <button class="dropdown-btn">User  <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="AddUser.html">Add User</a>
+          <a href="UserList.html">User List</a>
+        </div>
+        <button class="dropdown-btn">Token <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="AutoToken.html">Auto Token</a>
+          <a href="ManualToken.html">Manual Token</a>
+          <a href="currentToken.html">Current Token</a>
+        </div>
       </div>
       
       
     </nav>
-<!--<footer>
-    <div>
-    <p>By Nusrat Jahan Tagar</p></div>
-</footer>-->
 
 
 <script>
@@ -54,6 +73,24 @@
       document.getElementById("main").style.marginLeft= "0";
     }
     </script>
+
+<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+  </script>
 <section>
   <div class="middle">
   <!--have to add body section here-->
