@@ -55,6 +55,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 nav .logo h1{
      
@@ -66,8 +67,6 @@ nav .logo h1{
     cursor: pointer;
     margin-top: 0%;
 }
-
-
 nav ul{
     float: right;
     margin-top: 0%;
@@ -85,22 +84,14 @@ nav li a{
     text-transform: uppercase;
     padding: 0px 30px ;
     color: aliceblue;
-    text-decoration: none;
-   
-
-    
+    text-decoration: none;   
     
 }
 nav li a:hover{
     color: tomato;
     transition: all 0.4s ease 0s ;
 }
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-   
-    
-  }
+
 /*
 footer{
     position: fixed;
@@ -116,10 +107,10 @@ footer{
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #111;
+    background:rgb(21, 36, 41);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 15px;
+    padding-top: 60px;
     overflow-x: hidden;
   }
   
@@ -135,6 +126,7 @@ footer{
     text-align: left;
     cursor: pointer;
     outline: none;
+    transition: 0.3s;
   }
   
   /* Optional: Style the caret down icon */
@@ -148,7 +140,6 @@ footer{
   }
   
   .sidebar .closebtn {
-    
     position: absolute;
     top: 0;
     right: 25px;
@@ -159,7 +150,7 @@ footer{
   
   .openbtn {
     
-    margin-right: 5px;
+    /*margin-right: 5px;*/
     font-size: 15px;
     cursor: pointer;
     background-color:rgb(21, 36, 41);
@@ -184,6 +175,10 @@ footer{
   
   .sidebar h1:hover {
     color: #f1f1f1;
+  }
+  #main {
+    transition: margin-left .5s;
+    padding: 16px; 
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -221,8 +216,6 @@ footer{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
-
-
 
 
 .middle{
