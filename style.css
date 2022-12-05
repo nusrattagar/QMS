@@ -232,12 +232,43 @@ footer{
   margin-left: 5%;
   padding-left: 2%;
 }
-.half img{
+.half h2{
+  font-size: xx-large;
   margin-top: 76px;
+  width: 100%;
+  height: 100%;
+ 
+}
+
+.half img{
+  margin-top: 10px;
   width: 100%;
   height: 100%;
   background-color: #818181;
 }
+.highlight{
+  color: darkblue;
+
+}
+.card{
+  width: 25%;
+  float: left;
+  margin-left: 5%;
+  padding-left: 2%;
+}
+.card h3{
+  font-size: xx-large;
+  margin-top: 76px;
+  width: 100%;
+  height: 100%;
+  color: rgb(13, 13, 48);
+ 
+}
+.card p{
+color: rgb(53, 5, 5);
+font-size: 20px;
+}
+
 .end{
   clear: both;
   margin-top:0px; 
