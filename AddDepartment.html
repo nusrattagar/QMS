@@ -1,119 +1,112 @@
-
 <!DOCTYPE html>
-<html lang=en><head><meta charset=utf-8>
-    <meta name=viewport content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <meta name=csrf-token content=h3ozK7N8JcXwsDWeguSOjSyrvLiXelKojyUEoTTp>
-    <title>Add Department</title><!-- favicon -->
-    <link rel="stylesheet" href="style.css">
-   
-    <!-- template bootstrap --><link href="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/css/template.min.css" rel='stylesheet prefetch'>
-    <!-- material-design -->
-    <!-- small-n-flat -->
-    <link href="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/css/small-n-flat.css" rel='stylesheet'><!-- font-awesome -->
-    <link href="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/css/font-awesome.min.css" rel='stylesheet'>
-    <!-- jquery-ui -->
-    <link href="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/css/jquery-ui.min.css" rel='stylesheet'><!-- datatable -->
-    <link href="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/css/dataTables.min.css" rel='stylesheet'><!-- select2 -->
-    <link href="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/css/select2.min.css" rel='stylesheet'><!-- custom style -->
-    <link href="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/css/style.css" rel='stylesheet'><!-- Page styles --><!-- Jquery -->
-    <script src="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/js/jquery.min.js">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Department</title>
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    </script>
-    
-
-    </head>
-  <body class="cm-no-transition cm-1-navbar loader-process">
-        <!-- Starts of Sidebar -->
-        <nav>
-            <div class="logo">
-    <h1>Queue Management System</h1>
-            </div>
-       <div class="options">
-            <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="contact us.html">Contact Us</a></li>
-            <!--<li><a href="#">Menu</a></li>-->
-            <li id="main">
-                <button class="openbtn" onclick="openNav()">☰ Menu </button>  
-            </li>
-        </ul>
-        
-          </div>
-    
-     <!--collaps menu-->
-        <div id="mySidebar" class="sidebar">
-            <h1>Menu</h1>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-            
-            <button class="dropdown-btn">Department  <i class="fa fa-caret-down"></i>
-            </button><!--<a href="#">Department</a>-->
-                    <div class="dropdown-container">
-              <a href="AddDepartment.html">Add Department</a>
-              <a href="DepartmentList.html">Department List</a>
-            </div>
-            <button class="dropdown-btn">Counter  <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-              <a href="Addcounter.html">Add Counter</a>
-              <a href="CounterList.html">Counter List</a>
-            </div>
-            <button class="dropdown-btn">User  <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-              <a href="AddUser.html">Add User</a>
-              <a href="UserList.html">User List</a>
-            </div>
-            <button class="dropdown-btn">Token <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-              <a href="AutoToken.html">Auto Token</a>
-              <a href="ManualToken.html">Manual Token</a>
-              <a href="currentToken.html">Current Token</a>
-            </div>
-            <button class="dropdown-btn">LogIn/Register<i class="fa fa-caret-down"></i>
-            </button>
-                    <div class="dropdown-container">
-              <a href="#">Log In</a>
-              <a href="#">Register</a>
-              <a href="#">Guest</a>
-            </div>
-    
-          </div>
-          
+<?php
+include(" DepartmentList.php ");
+?>
+    <style>
+      .error {color: #FF0000;}
+      </style>
+  </head>
+<body>
+  <body>
+    <nav>
+        <div class="logo">
+<h1>Queue Management System</h1>
         </div>
-          
-        </nav>
+   <div class="options">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="contact us.html">Contact Us</a></li>
+        <!--<li><a href="#">Menu</a></li>-->
+        <li id="main">
+            <button class="openbtn" onclick="openNav()">☰ Menu </button>  
+        </li>
+    </ul>
     
-       <!--------------------------------------------------------><!-- OFFICER MENU --><!--------------------------------------------------------><!--------------------------------------------------------><!-- RECEPTIONIST MENU --><!--------------------------------------------------------><!--------------------------------------------------------><!-- COMMON MENU --><!--------------------------------------------------------><li class="cm-submenu "><a target=_blank class=sf-device-tablet> Display 
+      </div>
 
-<div id=global><!-- Starts of Content --><div class="panel panel-primary" id=printMe><div class=panel-heading><div class=row><div class="col-sm-12 text-left"><h3>Add Department</h3></div></div></div><div class=panel-body><form method=POST action="http://localhost/Queue%20Management%20System%20Source%20Code/admin/department/create" accept-charset=UTF-8 class="col-md-7 col-sm-8"><input name=_token type=hidden value=h3ozK7N8JcXwsDWeguSOjSyrvLiXelKojyUEoTTp><div class="form-group "><label for=name>Name <i class=text-danger>*</i></label><input type=text name=name id=name class=form-control placeholder=Name value=""><span class=text-danger></span></div><div class="form-group "><label for=description>Description </label><textarea name=description id=description class=form-control placeholder=Description></textarea><span class=text-danger></span></div><div class="form-group "><label for=key>Key for Keyboard Mode <i class=text-danger>*</i></label><br/><select class="select2 form-control" name=key><option selected=selected value="">Select Option</option><option value=1>1</option><option value=2>2</option><option value=3>3</option><option value=4>4</option><option value=5>5</option><option value=6>6</option><option value=7>7</option><option value=8>8</option><option value=9>9</option><option value=a>a</option><option value=b>b</option><option value=c>c</option><option value=d>d</option><option value=e>e</option><option value=f>f</option><option value=g>g</option><option value=h>h</option><option value=i>i</option><option value=j>j</option><option value=k>k</option><option value=l>l</option><option value=m>m</option><option value=n>n</option><option value=o>o</option><option value=p>p</option><option value=q>q</option><option value=r>r</option><option value=s>s</option><option value=t>t</option><option value=u>u</option><option value=w>w</option><option value=x>x</option><option value=y>y</option><option value=z>z</option></select><br/><span class=text-danger></span></div><div class="form-group "><label for=status>Status <i class=text-danger>*</i></label><div id=status><label class=radio-inline><input type=radio name=status value=1 > Active
-</label><label class=radio-inline><input type=radio name=status value=0 checked> Inactive
-</label></div></div><div class=form-group><button class="button btn btn-info" type=reset><span>Reset</span></button><button class="button btn btn-success" type=submit><span>Save</span></button></div></form></div></div><!-- Ends of Contents --></div></div>
-<!-- All js --><!-- bootstrp --><script src="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/js/bootstrap.min.js"></script><!-- select2 --><script src="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/js/select2.min.js"></script><!-- juery-ui --><script src="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/js/jquery-ui.min.js"></script><!-- jquery.mousewheel.min --><script src="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/js/jquery.mousewheel.min.js"></script><!-- jquery.cookie.min --><script src="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/js/jquery.cookie.min.js"></script><!-- fastclick --><script src="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/js/fastclick.min.js"></script><!-- template --><script src="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/js/template.js"></script><!-- datatable --><script src="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/js/dataTables.min.js"></script><!-- custom script --><script src="http://localhost/Queue%20Management%20System%20Source%20Code/public/assets/js/script.js"></script><!-- Page Script --><script type="text/javascript"> (function(){//notification
-notify();
-setInterval(function(){notify();
-}, 30000);
-function notify(){$.ajax({
-type:'GET',
-url:'http://localhost/Queue%20Management%20System%20Source%20Code/common/message/notify',
-data:'_token = h3ozK7N8JcXwsDWeguSOjSyrvLiXelKojyUEoTTp',
-success:function(data){$("#message-notify").html(data);
-}});
-}//language switch
-$(".select-lang").on('click', function(){$.ajax({
-type:'GET',
-url: 'http://localhost/Queue%20Management%20System%20Source%20Code/common/language',
-data: {
-'locale' : $(this).data("locale"),'_token' : 'h3ozK7N8JcXwsDWeguSOjSyrvLiXelKojyUEoTTp'
-},
-success:function(data){history.go(0);
-}, error: function(){alert('failed');
-}}); 
-});
-})();
-</script>
-<script>
+ <!--collaps menu-->
+    <div id="mySidebar" class="sidebar">
+        <h1>Menu</h1>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        
+        <button class="dropdown-btn">Department  <i class="fa fa-caret-down"></i>
+        </button><!--<a href="#">Department</a>-->
+                <div class="dropdown-container">
+          <a href="AddDepartment.html">Add Department</a>
+          <a href="DepartmentList.html">Department List</a>
+        </div>
+        <button class="dropdown-btn">Counter  <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="Addcounter.html">Add Counter</a>
+          <a href="CounterList.html">Counter List</a>
+        </div>
+        <button class="dropdown-btn">User  <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="AddUser.html">Add User</a>
+          <a href="UserList.html">User List</a>
+        </div>
+        <button class="dropdown-btn">Token <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="AutoToken.html">Auto Token</a>
+          <a href="ManualToken.html">Manual Token</a>
+          <a href="currentToken.html">Current Token</a>
+        </div>
+        <button class="dropdown-btn">LogIn/Register<i class="fa fa-caret-down"></i>
+        </button>
+                <div class="dropdown-container">
+          <a href="#">Log In</a>
+          <a href="#">Register</a>
+          <a href="#">Guest</a>
+        </div>
+
+      </div>
+      
+    </div>
+      
+    </nav>
+
+<section>
+<Section>
+  <h2>PHP Form Validation Example</h2>
+  <p><span class="error">* required field</span></p>
+  <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?> 
+    Name: <input type="text" name="name" value="<?php echo $name;?>">
+    <span class="error">* <?php echo $nameErr;?></span>
+    <br><br>
+    E-mail: <input type="text" name="email" value="<?php echo $email;?>">
+    <span class="error">* <?php echo $emailErr;?></span>
+    <br><br>
+    Website: <input type="text" name="website" value="<?php echo $website;?>">
+    <span class="error"><?php echo $websiteErr;?></span>
+    <br><br>
+    Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+    <br><br>
+    Gender:
+    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female">Female
+    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male">Male
+    <input type="radio" name="gender" <?php if (isset($gender) && $gender=="other") echo "checked";?> value="other">Other  
+    <span class="error">* <?php echo $genderErr;?></span>
+    <br><br>
+    <input type="submit" name="submit" value="Submit">  
+  </form>
+  
+  
+</Section>
+
+  <script>
     function openNav() {
       document.getElementById("mySidebar").style.width = "250px";
       document.getElementById("main").style.marginLeft = "250px";
@@ -142,5 +135,6 @@ success:function(data){history.go(0);
     });
   }
   </script>
-
-</body></html>
+  
+</body>
+</html>
